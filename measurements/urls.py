@@ -5,6 +5,7 @@ from . import views
 
 urlpatterns = [
     url('^$', views.index),
+    url(r'^promedios/', views.Promedio, name='promedio'),
     url(r'^measurements/', views.MeasurementList),
     url(r'^thresholds/', views.ThresholdList, name='thresholdList'),
     url(r'^threshold/(?P<id_threshold>\d+)/$', views.ThresholdEdit, name='thresholdEdit'),
